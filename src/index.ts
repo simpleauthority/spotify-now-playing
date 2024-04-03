@@ -95,7 +95,9 @@ export default {
       const nowPlaying = await fetchNowPlaying(env)
       return new Response(JSON.stringify(nowPlaying), {
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET'
         }
       })
     } catch (error) {
