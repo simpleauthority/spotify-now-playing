@@ -1,0 +1,14 @@
+name = "spotify-now-playing"
+main = "src/index.ts"
+compatibility_date = "2024-04-03"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+CLIENT_ID = "6adcad6110fa4b288cac8f731b0803b1"
+
+[triggers]
+crons = ["*/45 * * * *"]
+
+[[kv_namespaces]]
+binding = "KV"
+id = "409480a0b44943f0b6097ae456195b3c"
